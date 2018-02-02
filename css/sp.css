@@ -1,0 +1,271 @@
+body{
+	margin:0;
+	background:url("../images/back.png");
+}
+
+@media screen and (max-width:767px){
+
+body{
+	background-image:url("../images/back.png");
+}
+
+header img{
+	width:100%;
+}
+
+#main0{
+	position:relative;
+}
+
+.main2{
+	position:absolute;
+	left:23%;
+	top:5%;
+	width:55%;
+}
+
+.main2 img{
+	width:100%;
+}
+
+.main3{
+	position:absolute;
+	right:5%;
+	top:0;
+	width:25%;
+}
+
+.main3 img{
+	width:100%;
+}
+
+.main4{
+	position:absolute;
+	right:5%;
+	top:25%;
+	width:25%;
+}
+
+.main4 img{
+	width:100%;
+}
+
+.gnavi{
+	overflow:hidden;
+	zoom:1;
+	position:absolute;
+    bottom:10%;
+    left:10%;
+    width:80%;
+}
+
+ul{
+	display:-webkit-flex;
+	display:flex;
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.gnavi ul{
+	list-style:none;
+	padding:0;
+}
+
+.gnavi li{
+	float:left;
+	width:20%;
+	text-align: center;
+}
+
+.gnavi li:nth-child(2n){
+	width:2%;
+}
+
+li a{
+	font-size:0.5em;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	color:#ffffff;
+	text-decoration:none;
+	text-shadow:1px 2px 3px #808080;
+}
+
+li p{
+	margin:0;
+	color:#ffffff;
+	text-align:center;
+}
+
+.scroll{
+	position:absolute;
+	bottom:2%;
+    left:47.5%;
+    width:5%;
+}
+
+.scroll img{
+	width:100%;
+}
+
+#content1{
+	overflow:hidden;
+	float:left;
+	zoom:1;
+	width:25%;
+	margin:1% 1% 1% 10%;
+}
+
+.content1_image img,
+.content2_image img,
+.content3_image img{
+	width:100%;
+}
+
+.content1_text p,
+.content2_text p,
+.content3_text p{
+	font-size:7.7px;
+	/*font-family:'SimSun';*/
+	text-align:center;
+}
+
+#content2{
+	float:left;
+	zoom:1;
+	width:25%;
+	margin:1% 1% 1% 1%;
+}
+
+#content3{
+	float:left;
+	zoom:1;
+	width:25%;
+	margin:1% 1% 1% 1%;
+}
+
+.content4_image img{
+	width:30%;
+	margin:0% 0% 0% 10%;
+}
+
+#content4 p{
+	width:70%;
+	font-size:0.6em;
+	margin-left:15%;
+	/*font-family:'SimSun';*/
+	line-height:170%;
+}
+
+.content5_image img{
+	width:30%;
+	margin:0% 0% 0% 10%;
+}
+
+.content6_image img{
+	width:80%;
+	margin:0% 0% 0% 10%;
+}
+
+#content5 p{
+	width:70%;
+	font-size:0.6em;
+	margin-left:15%;
+	/*font-family:'SimSun';*/
+	line-height:170%;
+}
+
+.content7_image img{
+	width:80%;
+	margin:0% 0% 0% 10%;
+}
+
+.content8_image img{
+	width:40%;
+	margin:0% 0% 0% 10%;
+}
+
+#content6 p{
+	width:70%;
+	font-size:0.6em;
+	margin-left:15%;
+	/*font-family:'SimSun';*/
+	line-height:170%;
+}
+
+table{
+	border-collapse:collapse;
+	/*font-family:'SimSun';*/
+	font-size:6.5px;
+	width:75%;
+	margin-left:15%;
+	text-align:center;
+}
+
+table th,table td{
+	border:solid 1px #7f7e7c;
+}
+
+#footer{
+	min-height:70px;
+	background-color:#302f2f;
+	opacity:0.5;
+	position:relative;
+}
+
+p.info{
+	position:absolute;
+	top:20%;
+	left:15%;
+	color:#ffffff;
+	font-size:12px;
+	/*font-family:'SimSun';*/
+}
+
+p.info1{
+	position:absolute;
+	top:15%;
+	right:15%;
+	font-size:10px;
+	/*font-family:'SimSun';*/
+	color:#ffffff;
+}
+
+p.info2{
+	position:absolute;
+	top:40%;
+	right:15%;
+	font-size:10px;
+	/*font-family:'SimSun';*/
+	color:#ffffff;
+}
+
+.page-top {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.page-top p {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right:15px;
+    bottom:15px;
+}
+
+.move-page-top {
+    display: block;
+    background: #69BA89;
+    width:30px;
+    height:30px;
+    color:#3C3C3B;
+    font-size:1em;
+    /*font-family:'SimSun';*/
+    line-height:25px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+}

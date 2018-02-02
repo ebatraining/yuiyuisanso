@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABOUT</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/sp2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$('.image1').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.image1').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown");
+  }
+ });
+});
+</script>
+<script>
+	$('.image2').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.image2').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown2");
+  }
+ });
+});
+</script>
+<script>
+	$('.image3').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.image3').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown");
+  }
+ });
+});
+</script>
+<script>
+	$('.image4').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.image4').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown2");
+  }
+ });
+});
+</script>
+<script>
+$( function(){
+  $( window ).scroll(
+  	function(){
+      var now = $( window ).scrollTop() ;
+      if( now > 800 ){
+	       $( '#page-top' ).fadeIn( "slow" ) ;
+      }
+       else{
+	      $( '#page-top' ).fadeOut( 'slow' ) ;
+      }
+    }  ) ;
+  $( '#move-page-top' ).click(
+  	function()
+  	{  	$( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;
+  	}  ) ;
+} ) ;
+</script>
+</head>
+<body>
+	<header>
+		<div id="main0">
+			<div class="main1">
+				<img src="images/about/logo.png" alt="ゆいゆい山荘">
+			</div>
+			<nav class="gnavi">
+				<ul>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<p>&nbsp;/&nbsp;</p>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+					<li>
+						<p>&nbsp;/&nbsp;</p>
+					</li>
+					<li>
+						<a href="info.html">周辺情報</a>
+					</li>
+					<li>
+						<p>&nbsp;/&nbsp;</p>
+					</li>
+					<li>
+						<a href="access.html">ACCESS</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="main2">
+				<img src="images/about/main.png" alt="ABOUT">
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="image1">
+			<div>
+				<img src="images/about/about1.png" alt="部屋">
+			</div>
+			<div class="circle1">
+				<img src="images/about/about2.png" alt="部屋">
+			</div>
+		</div>
+		<div class="image2">
+			<div class="circle2">
+				<img src="images/about/about3.png" alt="部屋">
+			</div>
+			<div>
+				<img src="images/about/about4.png" alt="部屋">
+			</div>
+		</div>
+		<div class="image3">
+			<div>
+				<img src="images/about/about5.png" alt="部屋">
+			</div>
+			<div class="circle3">
+				<img src="images/about/about6.png" alt="部屋">
+			</div>
+		</div>
+		<div class="image4">
+			<div class="circle4">
+				<img src="images/about/about7.png" alt="部屋">
+			</div>
+			<div>
+				<img src="images/about/about8.png" alt="部屋">
+			</div>
+		</div>
+	</main>
+	<footer id="footer">
+		<p class="info">ゆいゆい山荘</p>
+		<p class="info1">TEL:090-4389-9152</p>
+		<p class="info2">MAIL:yuiyuisanso@gmail.com</p>
+	</footer>
+	<div id="page-top" class="page-top" style="display: block;">
+		<p><a id="move-page-top" class="move-page-top">top</a></p>
+	</div>
+</body>
+</html>

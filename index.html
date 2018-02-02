@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ゆいゆい山荘</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sp.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+	$(function() {
+  // 一旦hide()で隠してフェードインさせる
+  $('div.main2').hide().fadeIn('slow');
+});
+</script>
+<script>
+	$('#content1').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('#content1').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown");
+  }
+ });
+});
+</script>
+<script>
+	$('#content2').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('#content2').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown");
+  }
+ });
+});
+</script>
+<script>
+	$('#content3').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('#content3').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown");
+  }
+ });
+});
+</script>
+<script>
+	$('.content4_image').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.content4_image').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown4");
+  }
+ });
+});
+</script>
+<script>
+	$('.content5_image').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.content5_image').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown4");
+  }
+ });
+});
+</script>
+<script>
+	$('.content8_image').css('visibility','hidden');
+$(window).scroll(function(){
+ var windowHeight = $(window).height(),
+     topWindow = $(window).scrollTop();
+ $('.content8_image').each(function(){
+  var targetPosition = $(this).offset().top;
+  if(topWindow > targetPosition - windowHeight + 100){
+   $(this).addClass("fadeInDown4");
+  }
+ });
+});
+</script>
+<script>
+$( function(){
+  $( window ).scroll(
+  	function(){
+      var now = $( window ).scrollTop() ;
+      if( now > 800 ){
+	       $( '#page-top' ).fadeIn( "slow" ) ;
+      }
+       else{
+	      $( '#page-top' ).fadeOut( 'slow' ) ;
+      }
+    }  ) ;
+  $( '#move-page-top' ).click(
+  	function()
+  	{  	$( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;
+  	}  ) ;
+} ) ;
+</script>
+</head>
+<body>
+	<header>
+		<div id="main0">
+			<div class="main1">
+				<img src="images/main.png" alt="ファーストビュー">
+			</div>
+			<div class="main2">
+				<img src="images/logo.png" alt="ゆいゆい山荘">
+			</div>
+			<div class="main3">
+				<a href="form.html"><img src="images/info.png" alt="お問い合わせ"></a>
+			</div>
+			<div class="main4">
+				<img src="images/info2.png" alt="電話">
+			</div>
+			<nav class="gnavi">
+				<ul>
+					<li>
+						<a href="index.html">HOME</a>
+						<span>/</span>
+					</li>
+					<li>
+						<p>/</p>
+					</li>
+					<li>
+						<a href="about.html">ABOUT</a>
+					</li>
+					<li>
+						<p>/</p>
+					</li>
+					<li>
+						<a href="info.html">周辺情報</a>
+					</li>
+					<li>
+						<p>/</p>
+					</li>
+					<li>
+						<a href="access.html">ACCESS</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="scroll">
+				<img src="images/scroll.png" alt="スクロール">
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="content1">
+			<div class="content1_image">
+				<img src="images/plan1.png" alt="プラン１">
+			</div>
+			<div class="content1_text">
+				<p>由布の絶景を愉しむ<br>一棟貸し切りプランのみ</p>
+			</div>
+		</section>
+		<section id="content2">
+			<div class="content2_image">
+				<img src="images/plan2.png" alt="プラン２">
+			</div>
+			<div class="content2_text">
+				<p>降り注ぐような満点の星…</p>
+			</div>
+		</section>
+		<section id="content3">
+			<div class="content3_image">
+				<img src="images/plan3.png" alt="プラン３">
+			</div>
+			<div class="content3_text">
+				<p>ご家族・グループ<br>2人だけのプライベートタイム</p>
+			</div>
+		</section>
+		<section id="content4">
+			<div class="content4_image">
+				<img src="images/plan4.png" alt="宿泊プラン">
+			</div>
+			<p>
+				<span style="color:#8a8100">■</span>宿泊料金は、6名様までを基準としています。<br>
+				　（最大で10名様までの受け入れができます）<br>
+				　7名様以上になりますと、1名様に付き3,000円の追加となります。<br>
+				　（ただし、小学生以下のお子様・幼児は無料です）<br>
+				<span style="color:#8a8100">■</span>
+				宿泊料金は、季節や曜日によって変わります。<br>
+				<span style="color:#8a8100">■</span>
+				食事：なし<br>
+				　　　（簡易食材は準備しています）<br>
+				　　　・レトルトご飯・カップラーメン各種・レトルト食品等<br>
+				　　　（どれでも一品200円）<br>
+				<span style="color:#8a8100">■</span>
+				飲食物持ち込み可。バーベキュー可。（食材料はお客様がご準備）<br>
+				　　（バーベキューセット木炭3kg2,000円でお貸しできます。お客様の持ち込み可）<br>
+				<span style="color:#8a8100">■</span>
+				基本チェックイン15：00～　チェックアウト次の日～11：00<br>
+				　　（全後日の他のお客様との関係もありますので、ご相談に応じます）
+			</p>
+		</section>
+		<section id="content5">
+			<div class="content5_image">
+				<img src="images/yoyaku1.png" alt="予約方法">
+			</div>
+			<div class="content6_image">
+				<img src="images/yoyaku2.png" alt="予約方法">
+			</div>
+			<p>
+				<span style="color:#8a8100">■</span>
+				　電話かメールにてご連絡をいただいた後、仮押さえをいたします。<br>
+				　　 予約金が必要ですので、電話かメールにてお知らせした指定口座へ<br>　　 お振込みください。<br>
+				<span style="color:#8a8100">■</span>
+				　金額は、宿泊料金の100％<br>
+				　　 振り込み日は、予約日から3日以内<br>
+				<span style="color:#8a8100">■</span>
+				　確認方法は、メールまたは電話にて予約金お振込み確認完了の<br>　　 ご連絡をした直後、ご予約決定となります。<br>
+				<span style="color:#8a8100">■</span>
+				　なお、現地ではクレジットカードでのお支払いはできません。<br>
+				　　 もしキャンセルが発生するときは、以下の規定はお守りください。
+			</p>
+			<div class="content7_image">
+				<img src="images/cancel.png" alt="キャンセル">
+			</div>
+		</section>
+		<section id="content6">
+			<div class="content8_image">
+				<img src="images/bihin.png" alt="別荘内の備品">
+			</div>
+			<p>
+				<span style="color:#8a8100">■</span>
+				寝具　　　 お布団は6名様分程度ご用意しております。<br>
+				<span style="color:#8a8100">■</span>
+				台所回り　・冷蔵庫・炊飯ジャー・電子レンジ・ガスレンジ<br>
+				　　　　　 　・電磁式調理器・ホットプレート・コーヒーメーカー<br>
+				　　　　 　　・その他　台所用品一式完備　食器類一式完備<br>
+				<span style="color:#8a8100">■</span>
+				家電　　　・テレビ・DVDプレーヤー・ドライヤー・扇風機<br>
+				　　　　 　　・だるまストーブ・電気こたつ・ホットカーペット<br>
+				<span style="color:#8a8100">■</span>
+				　アメニティ<br>
+			</p>
+			<table>
+				<tr>
+					<td>×</td>
+					<td>ハンドタオル</td>
+					<td>○</td>
+					<td>ボディーソープ</td>
+					<td>○</td>
+					<td>ドライヤー</td>
+				</tr>
+				<tr>
+					<td>×</td>
+					<td>バスタオル</td>
+					<td>×</td>
+					<td>歯ブラシ・歯磨き粉</td>
+					<td>○</td>
+					<td>石鹸</td>
+				</tr>
+				<tr>
+					<td>○</td>
+					<td>ティッシュBOX</td>
+					<td>○</td>
+					<td>くし・ブラシ</td>
+					<td>○</td>
+					<td>温水洗浄トイレ</td>
+				</tr>
+				<tr>
+					<td>×</td>
+					<td>浴衣</td>
+					<td>○</td>
+					<td>T字髭剃り</td>
+					<td>○</td>
+					<td>カールブラシ</td>
+				</tr>
+				<tr>
+					<td>○</td>
+					<td>シャンプー</td>
+					<td>○</td>
+					<td>リンス</td>
+					<td>○</td>
+					<td>シャワーキャップ</td>
+				</tr>
+				<tr>
+					<td>×</td>
+					<td>パジャマ</td>
+					<td>×</td>
+					<td>バスローブ</td>
+					<td>○</td>
+					<td>綿棒</td>
+				</tr>
+			</table>
+			<p>
+				<span style="color:#8a8100">■</span>
+				　ペットはご遠慮願います。<br>
+				<span style="color:#8a8100">■</span>
+				　蚊取り線香・殺虫剤等は、常備しております。<br><br>
+
+				その他詳細につきましては　<span style="color:#64bfa9"><span style="font-size:1.5em">090-4389-9152</span></span>　までお問い合わせ下さい
+			</p>
+		</section>
+	</main>
+	<footer id="footer">
+		<p class="info">ゆいゆい山荘</p>
+		<p class="info1">TEL:090-4389-9152</p>
+		<p class="info2">MAIL:yuiyuisanso@gmail.com</p>
+	</footer>
+	<div id="page-top" class="page-top" style="display: block;">
+		<p><a id="move-page-top" class="move-page-top">top</a></p>
+	</div>
+</body>
+</html>

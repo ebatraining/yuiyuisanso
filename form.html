@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<title>お問い合わせ</title>
+<meta name="description" content="お問い合わせフォームの作成です。">
+<meta name="kewords" content="お問い合わせ">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="css/style5.css">
+<link rel="stylesheet" href="css/sp5.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/humanity/jquery-ui.css">
+<script>
+		$(function(aaa){
+		var now = new Date();
+		var year = now.getFullYear();
+		var mon = now.getMonth()+1; //１を足すこと
+		var day = now.getDate();
+		var hour = now.getHours();
+		var min = now.getMinutes();
+		var bbb = document.getElementById("sendDate");
+		bbb.value=year+"年"+mon+"月"+day+"日"+hour+"時"+min+"分";
+		});
+	</script>
+<script>
+  $(function() {
+    $("#datepicker").datepicker();
+  });
+</script>
+<script>
+$( function(){
+  $( window ).scroll(
+  	function(){
+      var now = $( window ).scrollTop() ;
+      if( now > 800 ){
+	       $( '#page-top' ).fadeIn( "slow" ) ;
+      }
+       else{
+	      $( '#page-top' ).fadeOut( 'slow' ) ;
+      }
+    }  ) ;
+  $( '#move-page-top' ).click(
+  	function()
+  	{  	$( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;
+  	}  ) ;
+} ) ;
+</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div id="main0">
+			<div class="top">
+				<div class="main1">
+					<img src="images/about/logo.png" alt="ゆいゆい山荘">
+				</div>
+				<nav class="gnavi">
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<p>&nbsp;/&nbsp;</p>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<p>&nbsp;/&nbsp;</p>
+						</li>
+						<li>
+							<a href="info.html">周辺情報</a>
+						</li>
+						<li>
+							<p>&nbsp;/&nbsp;</p>
+						</li>
+						<li>
+							<a href="access.html">ACCESS</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main2">
+				<img src="images/mail.png" alt="お問い合わせ">
+			</div>
+		</div>
+	</header>
+	<main>
+		<form action="mail.php" method="post">
+			<table>
+				<tr>
+					<th>お名前</th>
+					<td colspan="2"><input type="text" name="お名前"></td>
+				</tr>
+				<tr>
+					<th>電話番号</th>
+					<td colspan="2"><input type="text" name="電話番号"></td>
+				</tr>
+				<tr>
+					<th>メールアドレス</th>
+					<td colspan="2"><input type="email" name="メールアドレス"></td>
+				</tr>
+				<tr>
+					<th>希望日時</th>
+					<td><input type="text" name="訪問希望日時" id="datepicker" placeholder="クリックして下さい"></td>
+					<td>
+					<select name="時間">
+						<option value="">時間を選択</option>
+						<option value="10時">10時</option>
+						<option value="12時">12時</option>
+						<option value="15時">15時</option>
+						<option value="17時">17時</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<th>お問い合わせ内容</th>
+					<td colspan="2"><textarea rows="15" name="お問い合わせ内容"></textarea></td>
+				</tr>
+				<input type="hidden" name="送信日時">
+				<input type="hidden" id="sendDate" name="送信日時">
+				</table>
+			<div class="button">
+				<input type="submit" value="送信" onclick="aaa()">
+				<input type="reset" value="リセット">
+			</div>
+		</form>
+	</main>
+	<footer id="footer">
+		<p class="info">ゆいゆい山荘</p>
+		<p class="info1">TEL:090-4389-9152</p>
+		<p class="info2">MAIL:yuiyuisanso@gmail.com</p>
+	</footer>
+	<div id="page-top" class="page-top" style="display: block;">
+		<p><a id="move-page-top" class="move-page-top">top</a></p>
+	</div>
+</div>
+</body>
+</html>

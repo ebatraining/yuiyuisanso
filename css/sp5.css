@@ -1,0 +1,198 @@
+body{
+	margin:0;
+	background:url("../images/back.png");
+}
+
+@media screen and (max-width:767px){
+
+body{
+	margin:0;
+}
+
+header img{
+	width:100%;
+}
+
+#main0{
+
+}
+
+.top{
+	overflow:hidden;
+}
+
+.main1{
+	width:20%;
+	margin-left:10%;
+	float:left;
+}
+
+.main1 img{
+	width:100%;
+}
+
+.gnavi{
+    width:65%;
+    text-align:center;
+	float:right;
+}
+
+.gnavi ul{
+	list-style:none;
+	padding:0;
+}
+
+.gnavi li{
+	float:left;
+}
+
+li img{
+	width:100%;
+}
+
+li p{
+	margin:0;
+	color:#6a6767;
+	text-align:center;
+}
+
+li a{
+	text-decoration:none;
+	color:#6a6767;
+	font-family:'SimSun';
+	font-size:70%;
+}
+
+main{
+	margin:5%;
+}
+
+form{
+	margin:0 auto;
+	width:90%;
+}
+
+form div + div{
+	margin-top:3em;
+}
+
+table{
+	table-layout:fixed;
+    border-spacing:0.7em 1em;
+    margin:auto;
+    width:100%;
+}
+
+th{
+	text-align:justify;
+	color:#A3D4B7;
+	font-size:10px;
+	font-family:'SimSun';
+	vertical-align:top;
+	width:21%;
+}
+
+table input{
+	width:100%;
+	vertical-align:top;
+	background-color: rgba(0,20,0,0.2);
+}
+
+select{
+	width:100%;
+	background-color: rgba(0,20,0,0.2);
+}
+
+textarea{
+	width:100%;
+	background-color: rgba(0,20,0,0.2);
+}
+
+.button{
+	width:75%;
+  	margin:0 auto;
+  	text-align:center;
+}
+
+.button input{
+	background-color:#A3D4B7;
+	color:#696C6A;
+	width:35%;
+  	padding:2%;
+  	text-align:center;
+  	font-size:10px;
+	border-style:none;
+  	margin:5% 5%;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button{
+  cursor:pointer;
+}
+
+#footer{
+	min-height:70px;
+	background-color:#302f2f;
+	opacity:0.5;
+	position:relative;
+}
+
+p.info{
+	position:absolute;
+	top:20%;
+	left:15%;
+	color:#ffffff;
+	font-size:12px;
+	font-family:'SimSun';
+}
+
+p.info1{
+	position:absolute;
+	top:15%;
+	right:15%;
+	font-size:10px;
+	font-family:'SimSun';
+	color:#ffffff;
+}
+
+p.info2{
+	position:absolute;
+	top:40%;
+	right:15%;
+	font-size:10px;
+	font-family:'SimSun';
+	color:#ffffff;
+}
+
+.page-top {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.page-top p {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right:15px;
+    bottom:15px;
+}
+
+.move-page-top {
+    display: block;
+    background: #69BA89;
+    width:30px;
+    height:30px;
+    color:#3C3C3B;
+    font-size:1em;
+    font-family: 'SimSun';
+    line-height:25px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+}

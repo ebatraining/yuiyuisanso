@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ACCESS</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="css/style4.css">
+<link rel="stylesheet" href="css/sp4.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$( function(){
+  $( window ).scroll(
+  	function(){
+      var now = $( window ).scrollTop() ;
+      if( now > 800 ){
+	       $( '#page-top' ).fadeIn( "slow" ) ;
+      }
+       else{
+	      $( '#page-top' ).fadeOut( 'slow' ) ;
+      }
+    }  ) ;
+  $( '#move-page-top' ).click(
+  	function()
+  	{  	$( 'html,body' ).animate( {scrollTop:0} , 'slow' ) ;
+  	}  ) ;
+} ) ;
+</script>
+</head>
+<body>
+	<header>
+		<div id="main0">
+			<div class="top">
+				<div class="main1">
+					<img src="images/about/logo.png" alt="ゆいゆい山荘">
+				</div>
+				<nav class="gnavi">
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<p>&nbsp;/&nbsp;</p>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+						<li>
+							<p>&nbsp;/&nbsp;</p>
+						</li>
+						<li>
+							<a href="info.html">周辺情報</a>
+						</li>
+						<li>
+							<p>&nbsp;/&nbsp;</p>
+						</li>
+						<li>
+							<a href="access.html">ACCESS</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main2">
+				<img src="images/access/main.png" alt="アクセス">
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="address">
+			<p><span class="under">住所</span></p>
+			<p>大分県由布市湯布院町大字塚原1217-29</p>
+		</section>
+		<section id="tel">
+			<p><span class="under">電話番号</span></p>
+			<p>「ゆいゆい山荘」　090-4389-9152</p>
+		</section>
+		<section id="mail">
+			<p><span class="under">メール</span></p>
+			<p>mail:yuiyuisanso@gmail.com</p>
+		</section>
+		<section id="access">
+			<p><span class="under">ACCESS</span></p>
+			<p>湯布院ICより、湯布院交差点を左折<br>
+			塚原方面へ、乗馬クラブを左折<br>
+			ICより車で20分<br>
+			【車以外】<br>
+			湯布院駅よりレンタカーかタクシー<br>
+			【車】<br>
+			大分自動車道～湯布院～由布交差点を<br>
+			左折塚原方面へ、ICより車で15分
+			</p>
+		</section>
+		<section id="parking">
+			<p><span class="under">駐車場</span></p>
+			<p>有り（無料）　5～6台までOK</p>
+				<iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=33.314463,131.403351&amp;hl=ja&amp;geocode=&amp;sll=33.314535,131.403222&amp;sspn=0.019151,0.037551&amp;brcurrent=3,0x3546a92f8e014def:0xc07694b51c0ca1eb,0&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;start=0&amp;ll=33.314535,131.403222&amp;spn=0.019151,0.037551&amp;output=embed" width="425" height="350" frameborder="0">
+				</iframe>
+		</section>
+	</main>
+	<footer id="footer">
+		<p class="info">ゆいゆい山荘</p>
+		<p class="info1">TEL:090-4389-9152</p>
+		<p class="info2">MAIL:yuiyuisanso@gmail.com</p>
+	</footer>
+	<div id="page-top" class="page-top" style="display: block;">
+		<p><a id="move-page-top" class="move-page-top">top</a></p>
+	</div>
+</body>
+</html>

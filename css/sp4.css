@@ -1,0 +1,162 @@
+body{
+	margin:0;
+	background:url("../images/back.png");
+}
+
+@media screen and (max-width:767px){
+
+body{
+	background-image:url("../images/back.png");
+}
+
+header img{
+	width:100%;
+}
+
+#main0{
+
+}
+
+.top{
+	overflow:hidden;
+}
+
+.main1{
+	width:20%;
+	margin-left:10%;
+	float:left;
+}
+
+.main1 img{
+	width:100%;
+}
+
+.gnavi{
+    width:65%;
+    text-align:center;
+	float:right;
+}
+
+.gnavi ul{
+	list-style:none;
+	padding:0;
+}
+
+.gnavi li{
+	float:left;
+}
+
+li img{
+	width:100%;
+}
+
+li p{
+	margin:0;
+	color:#6a6767;
+	text-align:center;
+}
+
+li a{
+	text-decoration:none;
+	color:#6a6767;
+	font-family:'SimSun';
+	font-size:70%;
+}
+
+#address,
+#tel,
+#mail,
+#access,
+#parking{
+	text-align:center;
+	font-family:'SimSun';
+	margin-top:7%;
+}
+
+#address p,
+#tel p,
+#mail p,
+#access p,
+#parking{
+	font-size:15px;
+}
+
+.under {
+	display:block;
+	background:linear-gradient(transparent 70%, #d2d1ce 70%);
+	padding-bottom:5px;
+	font-size:15px;
+  }
+
+  iframe{
+  	margin:5% auto 5%;
+		width:70%;
+		height:70%;
+
+  }
+
+	#footer{
+		min-height:70px;
+		background-color:#302f2f;
+		opacity:0.5;
+		position:relative;
+	}
+
+	p.info{
+		position:absolute;
+		top:20%;
+		left:15%;
+		color:#ffffff;
+		font-size:12px;
+		font-family:'SimSun';
+	}
+
+	p.info1{
+		position:absolute;
+		top:15%;
+		right:15%;
+		font-size:10px;
+		font-family:'SimSun';
+		color:#ffffff;
+	}
+
+	p.info2{
+		position:absolute;
+		top:40%;
+		right:15%;
+		font-size:10px;
+		font-family:'SimSun';
+		color:#ffffff;
+	}
+
+	.page-top {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.page-top p {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right:15px;
+    bottom:15px;
+}
+
+.move-page-top {
+    display: block;
+    background: #69BA89;
+    width:30px;
+    height:30px;
+    color:#3C3C3B;
+    font-size:1em;
+    font-family: 'SimSun';
+    line-height:25px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+}
