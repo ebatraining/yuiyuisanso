@@ -49,17 +49,56 @@
 body{
 	margin:0;
 	background:url("../images/back.png");
+  position: relative;
+  min-height: 100%;
 }
 
+html,  body {
+   margin: 0;
+   width: 100%;
+   height: 100%;
+  }
+.container {
+   padding-bottom: 100px;
+ }
+
+main{
+  width: 100%;
+    position: relative;
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+
+}
 @media screen and (min-width:768px){
 
 body{
 	background-image:url("../images/back.png");
 }
 
+
 header img{
 	width:100%;
 }
+#slideshow {
+   position: relative;
+   margin: 0;
+}
+#slideshow img {
+  position: absolute;
+   top: 0;
+   left:0;
+   z-index: 1;
+   opacity: 0.0;
+}
+#slideshow img.active {
+   z-index: 3;
+   opacity: 1.0;
+}
+#slideshow img.last-active {
+   z-index: 2;
+}
+
 
 #main0{
 	position:relative;
@@ -67,6 +106,7 @@ header img{
 
 .main2{
 	position:absolute;
+  z-index: 4;
 	left:23%;
 	top:5%;
 	width:55%;
@@ -81,6 +121,7 @@ header img{
 	right:5%;
 	top:0;
 	width:15%;
+  z-index: 5;
 }
 
 .main3 img{
@@ -92,19 +133,42 @@ header img{
 	right:5%;
 	top:15%;
 	width:15%;
+  z-index: 6;
 }
 
 .main4 img{
 	width:100%;
+  margin-top: 49%;
+}
+
+main{
+  overflow: hidden;
+  position: absolute;
+  margin-top: 58%;
+
+}
+
+.scroll{
+  width: 7%;
+  margin: 8% 40%;
+}
+
+.scroll img{
+	width:100%;
+}
+
+.clearfix{
+	display: none;
 }
 
 .gnavi{
 	overflow:hidden;
 	zoom:1;
 	position:absolute;
-    bottom:22%;
     left:15%;
     width:80%;
+    z-index: 7;
+    margin-top: 41%;
 }
 
 .gnavi ul{
@@ -143,17 +207,6 @@ li p{
 	color:#ffffff;
 	text-align:center;
 	font-size:2vw;
-}
-
-.scroll{
-	position:absolute;
-	bottom:2%;
-    left:47.5%;
-    width:5%;
-}
-
-.scroll img{
-	width:100%;
 }
 
 #content1{
@@ -255,10 +308,15 @@ table th,table td{
 }
 
 #footer{
-	min-height:150px;
-	background-color:#302f2f;
-	opacity:0.5;
-	position:relative;
+  min-height: 70px;
+  height: 25%;
+    background-color: #302f2f;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    z-index: 14;
+    width: 100%;
+    overflow: hidden;
 }
 
 p.info{
@@ -303,19 +361,19 @@ p.info2{
 }
 
 .move-page-top {
-    display: block;
-    background: #69BA89;
-    width: 50px;
-    height: 50px;
-    color: #3C3C3B;
-    font-size:1.5em;
-    /*font-family: 'SimSun';*/
-    line-height: 50px;
+  background: #666;
     text-decoration: none;
+    color: #fff;
+    width: 3em;
+    padding: 35% 0;
     text-align: center;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    display: block;
+    border-radius: 5px;
 }
+#page-top a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
 
 }

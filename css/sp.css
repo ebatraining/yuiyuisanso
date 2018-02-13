@@ -7,11 +7,34 @@ body{
 
 body{
 	background-image:url("../images/back.png");
+	margin: 0;
+	position: relative;
 }
 
 header img{
 	width:100%;
 }
+
+#slideshow {
+   position: relative;
+   margin: 0;
+}
+#slideshow img {
+  position: absolute;
+   top: 0;
+   left:0;
+   z-index: 1;
+   opacity: 0.0;
+}
+#slideshow img.active {
+   z-index: 3;
+   opacity: 1.0;
+}
+#slideshow img.last-active {
+   z-index: 2;
+}
+
+
 
 #main0{
 	position:relative;
@@ -19,6 +42,7 @@ header img{
 
 .main2{
 	position:absolute;
+	z-index: 4;
 	left:23%;
 	top:5%;
 	width:55%;
@@ -26,13 +50,15 @@ header img{
 
 .main2 img{
 	width:100%;
+	margin-top: 12%;
 }
 
 .main3{
-	position:absolute;
-	right:5%;
-	top:0;
-	width:25%;
+	position: absolute;
+    right: 1%;
+    margin-top: 33%;
+    width: 25%;
+    z-index: 5;
 }
 
 .main3 img{
@@ -40,41 +66,96 @@ header img{
 }
 
 .main4{
-	position:absolute;
-	right:5%;
-	top:25%;
-	width:25%;
+	position: absolute;
+    right: 1%;
+    top: 39%;
+    width: 25%;
+    z-index: 6;
+    margin-top: 33%;
 }
 
 .main4 img{
 	width:100%;
+	margin-top: 49%;
+}
+
+main{
+  overflow: hidden;
+  position: absolute;
+  margin-top: 58%;
+
+}
+/*ハンバーガー menu*/
+#menu{
+	list-style-type: none;
+	padding: 5px 20px 0px 64px;
+	z-index: 9999;
+	margin: 0 9%;
+	display: none;
+		}
+nav.menu			{
+	 	width: 25px;
+    height: 30px;
+    top: 75px;
+    right: 87%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 9999; }
+nav .menu1			{ width:25px; height:2px; background-color: #ffffff; top:0px; position:absolute; }
+nav .menu2			{ width:25px; height:2px; background-color: #ffffff; top:8px; position:absolute; }
+nav .menu3			{ width:25px; height:2px; background-color: #ffffff; top:16px; position:absolute; }
+nav .menu1,nav .menu2,nav .menu3
+					{ transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; /* Opera */ -moz-transition: all 0.5s ease-out; /* Firefox */
+					 -webkit-transition: all 0.5s ease-out; /* GoogleChrome, Safari */ -ms-transition: all 0.5s ease-out; /* IE */ }
+					 nav .menuclick1		{ top:8px; -o-transform: rotate(405deg); -moz-transform: rotate(405deg); -webkit-transform: rotate(405deg);
+					 				 	-ms-transform: rotate(405deg); transform: rotate(405deg); }
+					 nav .menuclick2		{ background-color:rgba(255,255,255,0);  }
+					 nav .menuclick3		{ top:8px; -o-transform: rotate(-405deg); -moz-transform: rotate(-405deg);
+					 					-webkit-transform: rotate(-405deg); -ms-transform: rotate(-405deg); transform: rotate(-405deg); }
+
+.clearfix{
+	margin-right: 3%;
+  margin-top: -16%;
+}
+header ul {margin:0}
+header ul li {
+    display:block;
+    margin:0;
+    line-height:3
+	}
+
+/*ここまで　ハンバーガー menu*/
+nav{
+	position: relative;
+	width: 100%;
+  margin: 0 -7%;
 }
 
 .gnavi{
-	overflow:hidden;
-	zoom:1;
-	position:absolute;
-    bottom:10%;
-    left:10%;
-    width:80%;
-}
+	zoom: 1;
+    position: absolute;
+    right: 17%;
+    width: 83%;
+    z-index: 7;
+    margin-top: 0;
+    overflow: hidden;
+		display: flex;
+	}
 
 ul{
 	display:-webkit-flex;
 	display:flex;
 	-webkit-justify-content: space-around;
     justify-content: space-around;
+		list-style:none;
+		padding:0;
+		list-style: none;
 }
 
-.gnavi ul{
-	list-style:none;
-	padding:0;
-}
 
 .gnavi li{
-	float:left;
-	width:20%;
-	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
 .gnavi li:nth-child(2n){
@@ -82,28 +163,43 @@ ul{
 }
 
 li a{
-	font-size:0.5em;
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-	color:#ffffff;
-	text-decoration:none;
-	text-shadow:1px 2px 3px #808080;
+	display: block;
+    /* border-left: 4px solid #55ea83; */
+    background-color: #454643;
+    text-decoration: none;
+    color: #f5f2f9;
+    width: 62px;
+    margin: -11px 0px;
+    text-align: center;
+    font-size: 11px;
+    height: 30%;
+		opacity: 0.9;
+}
+li p,span{
+	color: #ffffff00;
+
+}
+li a:hover{
+color: #454643;
+border-top: 1px solid #454643;
+border-right: 1px solid #454643;
+border-bottom: 1px solid #454643;
+background-color: #ffffff;
 }
 
-li p{
-	margin:0;
-	color:#ffffff;
-	text-align:center;
-}
 
 .scroll{
-	position:absolute;
-	bottom:2%;
-    left:47.5%;
-    width:5%;
+	bottom: -56%;
+    left: 17.5%;
+    width: 6%;
+    z-index: 11;
 }
 
 .scroll img{
 	width:100%;
+    margin-top: -48%;
+    margin-left: 675%;
+		display: none;
 }
 
 #content1{
@@ -205,10 +301,15 @@ table th,table td{
 }
 
 #footer{
-	min-height:70px;
-	background-color:#302f2f;
-	opacity:0.5;
-	position:relative;
+	min-height: 70px;
+  height: 10%;
+    background-color: #302f2f;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    z-index: 14;
+    width: 100%;
+    overflow: hidden;
 }
 
 p.info{
@@ -241,7 +342,7 @@ p.info2{
 .page-top {
     margin: 0;
     padding: 0;
-    display: none;
+
 }
 
 .page-top p {
@@ -253,19 +354,18 @@ p.info2{
 }
 
 .move-page-top {
-    display: block;
-    background: #69BA89;
-    width:30px;
-    height:30px;
-    color:#3C3C3B;
-    font-size:1em;
-    /*font-family:'SimSun';*/
-    line-height:25px;
+  background: #666;
     text-decoration: none;
+    color: #fff;
+    width: 2em;
+    padding: 29% 0;
     text-align: center;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    display: block;
+    border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  opacity: 0.7;
 }
 
 }

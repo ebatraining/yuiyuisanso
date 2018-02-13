@@ -10,6 +10,57 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sp.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- ハンバーガーボタン -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function(){
+    $(".menu").click(function(){
+        $(".menu1").toggleClass("menuclick1")
+    });
+    $(".menu").click(function(){
+        $(".menu2").toggleClass("menuclick2")
+    });
+    $(".menu").click(function(){
+        $(".menu3").toggleClass("menuclick3")
+    });
+});
+</script>
+<script>
+jQuery(function($){
+			$('.menu').click(function(){
+   			 if ($('#menu').css('display') == 'none') {
+        	$('#menu').slideDown('fast');
+    		} else {
+       		 $('#menu').slideUp('fast');
+   			 }
+			});
+        });
+</script>
+<!-- スライドショー -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 3000 );
+});
+</script>
+
 <script>
 	$(function() {
   // 一旦hide()で隠してフェードインさせる
@@ -99,7 +150,7 @@ $( function(){
   $( window ).scroll(
   	function(){
       var now = $( window ).scrollTop() ;
-      if( now > 800 ){
+      if( now > 100 ){
 	       $( '#page-top' ).fadeIn( "slow" ) ;
       }
        else{
@@ -114,11 +165,22 @@ $( function(){
 </script>
 </head>
 <body>
+  <div id="wrap">
+  <div class="container">
 	<header>
 		<div id="main0">
 			<div class="main1">
-				<img src="images/main.png" alt="ファーストビュー">
+				<p id="slideshow">
+				<img src="images/main.png" alt="ファーストビュー" class="active">
+				<img src="images/mori.gif" alt="セカンドビュー">
+				<img src="images/yozora.gif" alt="サードビュー">
+				</p>
 			</div>
+			<nav class="menu clearfix">
+	 <div class="menu1"></div>
+	 <div class="menu2"></div>
+	 <div class="menu3"></div>
+</nav>
 			<div class="main2">
 				<img src="images/logo.png" alt="ゆいゆい山荘">
 			</div>
@@ -129,7 +191,9 @@ $( function(){
 				<img src="images/info2.png" alt="電話">
 			</div>
 			<nav class="gnavi">
-				<ul>
+
+	<nav>
+				<ul id="menu">
 					<li>
 						<a href="index.html">HOME</a>
 						<span>/</span>
@@ -154,6 +218,7 @@ $( function(){
 					</li>
 				</ul>
 			</nav>
+
 			<div class="scroll">
 				<img src="images/scroll.png" alt="スクロール">
 			</div>
@@ -309,13 +374,16 @@ $( function(){
 			</p>
 		</section>
 	</main>
+</div>
 	<footer id="footer">
 		<p class="info">ゆいゆい山荘</p>
 		<p class="info1">TEL:090-4389-9152</p>
 		<p class="info2">MAIL:yuiyuisanso@gmail.com</p>
 	</footer>
-	<div id="page-top" class="page-top" style="display: block;">
+	<div id="page-top" class="page-top">
 		<p><a id="move-page-top" class="move-page-top">top</a></p>
 	</div>
+</div>
 </body>
+</div>
 </html>
