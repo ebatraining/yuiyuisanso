@@ -50,25 +50,14 @@ header img{
 
 .main2 img{
 	width:100%;
-<<<<<<< HEAD
 	margin-top: 15%;
-=======
-	margin-top: 12%;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 .main3{
 	position: absolute;
-<<<<<<< HEAD
     z-index: 5;
     margin-top: 43%;
     margin-left: 5%;
-=======
-    right: 1%;
-    margin-top: 33%;
-    width: 25%;
-    z-index: 5;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 .main3 p{
@@ -82,7 +71,6 @@ header img{
 
 .main4{
 	position: absolute;
-<<<<<<< HEAD
 	right: 0;
 	width: 35%;
 	z-index: 5;
@@ -121,45 +109,6 @@ nav.menu			{
 nav .menu1			{ width:25px; height:2px; background-color: #e8d715; top:0px; position:absolute; }
 nav .menu2			{ width:25px; height:2px; background-color: #e8d715; top:8px; position:absolute; }
 nav .menu3			{ width:25px; height:2px; background-color: #e8d715; top:16px; position:absolute; }
-=======
-    right: 1%;
-    top: 39%;
-    width: 25%;
-    z-index: 6;
-    margin-top: 33%;
-}
-
-.main4 img{
-	width:100%;
-	margin-top: 49%;
-}
-
-main{
-  overflow: hidden;
-  position: absolute;
-  margin-top: 58%;
-
-}
-/*ハンバーガー menu*/
-#menu{
-	list-style-type: none;
-	padding: 5px 20px 0px 64px;
-	z-index: 9999;
-	margin: 0 9%;
-	display: none;
-		}
-nav.menu			{
-	 	width: 25px;
-    height: 30px;
-    top: 75px;
-    right: 87%;
-    position: absolute;
-    cursor: pointer;
-    z-index: 9999; }
-nav .menu1			{ width:25px; height:2px; background-color: #ffffff; top:0px; position:absolute; }
-nav .menu2			{ width:25px; height:2px; background-color: #ffffff; top:8px; position:absolute; }
-nav .menu3			{ width:25px; height:2px; background-color: #ffffff; top:16px; position:absolute; }
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 nav .menu1,nav .menu2,nav .menu3
 					{ transition: all 0.5s ease-out; -o-transition: all 0.5s ease-out; /* Opera */ -moz-transition: all 0.5s ease-out; /* Firefox */
 					 -webkit-transition: all 0.5s ease-out; /* GoogleChrome, Safari */ -ms-transition: all 0.5s ease-out; /* IE */ }
@@ -177,7 +126,6 @@ header ul {margin:0}
 header ul li {
     display:block;
     margin:0;
-<<<<<<< HEAD
     line-height: 2;
  }
 
@@ -186,66 +134,32 @@ nav{
 	width: 100%;
 	margin: 0;
 	padding: 0;
-=======
-    line-height:3
-	}
-
-/*ここまで　ハンバーガー menu*/
-nav{
-	position: relative;
-	width: 100%;
-  margin: 0 -7%;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 .gnavi{
 	zoom: 1;
-<<<<<<< HEAD
 	position: absolute;
 	z-index: 7;
 	margin-top: 0;
 	overflow: hidden;
 	display: flex;
-=======
-    position: absolute;
-    right: 17%;
-    width: 83%;
-    z-index: 7;
-    margin-top: 0;
-    overflow: hidden;
-		display: flex;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 	}
 
 ul{
 	display:-webkit-flex;
 	display:flex;
 	-webkit-justify-content: space-around;
-<<<<<<< HEAD
 	justify-content: space-around;
 	list-style:none;
 	padding:0;
 	list-style: none;
 }
-=======
-    justify-content: space-around;
-		list-style:none;
-		padding:0;
-		list-style: none;
-}
-
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 
 
 .gnavi li{
-<<<<<<< HEAD
 	width: 20%;
 	padding: 0;
 	text-align:  center;
-=======
-	padding: 0;
-	margin: 0;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 .gnavi li:nth-child(2n){
@@ -254,7 +168,6 @@ ul{
 
 li a{
 	display: block;
-<<<<<<< HEAD
 	text-decoration: none;
 	color: #f5f2f9;
 	font-family:'HG正楷書体-PRO','HGP行書体',cursive;
@@ -268,51 +181,13 @@ li p,span{
 .gnavi li :hover{
 	color: #454643;
 	background-color: #ffffff;
-=======
-    /* border-left: 4px solid #55ea83; */
-    background-color: #454643;
-    text-decoration: none;
-    color: #f5f2f9;
-    width: 62px;
-    margin: -11px 0px;
-    text-align: center;
-    font-size: 11px;
-    height: 30%;
-		opacity: 0.9;
-}
-li p,span{
-	color: #ffffff00;
-
-}
-li a:hover{
-color: #454643;
-border-top: 1px solid #454643;
-border-right: 1px solid #454643;
-border-bottom: 1px solid #454643;
-background-color: #ffffff;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 
 .scroll{
-<<<<<<< HEAD
 	display: none;
 }
 
-=======
-	bottom: -56%;
-    left: 17.5%;
-    width: 6%;
-    z-index: 11;
-}
-
-.scroll img{
-	width:100%;
-    margin-top: -48%;
-    margin-left: 675%;
-		display: none;
-}
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 
 #content1{
 	overflow:hidden;
@@ -414,7 +289,6 @@ table th,table td{
 
 #footer{
 	min-height: 70px;
-<<<<<<< HEAD
 	height: 10%;
 	background-color: #302f2f;
 	opacity: 0.5;
@@ -423,16 +297,6 @@ table th,table td{
 	z-index: 14;
 	width: 100%;
 	overflow: hidden;
-=======
-  height: 10%;
-    background-color: #302f2f;
-    opacity: 0.5;
-    position: absolute;
-    bottom: 0;
-    z-index: 14;
-    width: 100%;
-    overflow: hidden;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 p.info{
@@ -484,25 +348,9 @@ p.info2{
 	height: 10%;
 }
 
-<<<<<<< HEAD
 
 #move-page-top {
     display: block;
-=======
-.move-page-top {
-  background: #666;
-    text-decoration: none;
-    color: #fff;
-    width: 2em;
-    padding: 29% 0;
-    text-align: center;
-    display: block;
-    border-radius: 5px;
-}
-#page-top a:hover {
-  text-decoration: none;
-  opacity: 0.7;
->>>>>>> 0708f5db9e1dbd70a06202800fe3173c3cb85dc0
 }
 
 #page-top a:hover {
