@@ -396,5 +396,8 @@ p.info2{
   text-decoration: none;
   opacity: 0.7;
 }
+/*ここから追加*/
+.pc { display: block !important; }
+.sp { display: none !important; }
 
 }

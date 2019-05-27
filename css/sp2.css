@@ -104,94 +104,63 @@ li a{
 }
 
 .image1{
-	width:95%;
- 	margin:10% 0% 40% 5%;
+ 	margin:10% 5% ;
  	position:relative;
 }
 
 .image1 div{
-	width:70%;
+	width:100%;
 }
 
 .image1 div img{
 	width:100%;
-	padding:0 0 0 15%;
 }
-
-.circle1{
-	position:absolute;
-	top:75%;
-	right:10%;
-}
-
-
 
 .image2{
-	width:95%;
-  	margin:0 5%;
+  	margin:0% 5% ;
   	position:relative;
 }
 
 .image2 div{
-	width:70%;
+	width:100%;
 }
 
 .image2 div img{
 	width:100%;
-	padding:0 0 0 15%;
-}
+  margin-top:35%;
 
-.circle2{
-	position:absolute;
-	top:75%;
-	right:45%;
 }
-
 
 
 .image3{
-	width:95%;
-  	margin:40% 0 0 5%;
+	  	margin:0% 5% ;
   	position:relative;
 }
 
 .image3 div{
-	width:70%;
+	width:100%;
 }
 
 .image3 div img{
 	width:100%;
-	padding:0 0 0 15%;
-}
+  margin-top:45%;
 
-.circle3{
-	position:absolute;
-	top:75%;
-	right:10%;
 }
-
 
 
 .image4{
-	width:95%;
-  	margin:40% 0 0 5%;
+  	margin:0% 5% ;
   	position:relative;
 }
 
 .image4 div{
-	width:70%;
+	width:100%;
 }
 
 .image4 div img{
 	width:100%;
-	padding:0 0 0 15%;
-}
-
-.circle4{
-	position:absolute;
-	top:75%;
-	right:45%;
-}
+  margin-top:50%;
+	}
 
 
 
@@ -262,5 +231,86 @@ p.info2{
   opacity: 0.7;
 }
 
+/*ここから追加*/
+.pc { display: none !important; }
+.sp { display: block !important; }
 
+
+.circle1 img{
+  position: absolute;
+  top:68%;
+}
+.circle1 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 3.4vw;
+  top: 107%;
+  left: 21%;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+.circle2 img{
+  position: absolute;
+  top:48%;
+}
+.circle2 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 3.1vw;
+  top: 105%;
+  right: 11%;
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+.circle3 img{
+  position: absolute;
+  top:41%;
+}
+.circle3 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 3.3vw;
+  top: 101%;
+  left: 11%;
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+.circle4 img{
+  position: absolute;
+  top:40%;
+}
+.circle4 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 3.4vw;
+  top: 103%;
+  right: 30%;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+/*ハンバーガーメニュー*/
+.sp .drawer-hamburger-icon,
+.sp .drawer-hamburger-icon:after,
+.sp .drawer-hamburger-icon:before{
+  background-color:#8b0000;
+}
+li a{
+	display: block;
+	text-decoration: none;
+	color: #8b0000;
+	font-family:'HG正楷書体-PRO','HGP行書体',cursive;
+	font-size: 5.3vw;
+	font-weight:bold;
+	opacity: 0.9;
+	padding: 10px 1%;
+}
+.drawer-nav{
+	z-index: 4!important;
+	background-color: #fffaf0!important;
+	width: 12.25rem!important;
+}
 }

@@ -9,34 +9,19 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sp.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+
 <!-- ハンバーガーボタン -->
 <script>
-$(function(){
-    $(".menu").click(function(){
-        $(".menu1").toggleClass("menuclick1")
-    });
-    $(".menu").click(function(){
-        $(".menu2").toggleClass("menuclick2")
-    });
-    $(".menu").click(function(){
-        $(".menu3").toggleClass("menuclick3")
-    });
+$(document).ready(function() {
+	 $('.drawer').drawer();
 });
 </script>
-<script>
-jQuery(function($){
-			$('.menu').click(function(){
-   			 if ($('#menu').css('display') == 'none') {
-        	$('#menu').slideDown('fast');
-    		} else {
-       		 $('#menu').slideUp('fast');
-   			 }
-			});
-        });
-</script>
 <!-- スライドショー -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 function slideSwitch() {
    var $active = $('#slideshow img.active');
@@ -158,11 +143,7 @@ $(window).scroll(function(){
 				<img src="images/yozora1.png" alt="サードビュー">
 				</p>
 			</div>
-			<nav class="menu clearfix">
-	 <div class="menu1"></div>
-	 <div class="menu2"></div>
-	 <div class="menu3"></div>
-</nav>
+
 			<div class="main2">
 				<img src="images/logo.png" alt="ゆいゆい山荘">
 			</div>
@@ -172,7 +153,7 @@ $(window).scroll(function(){
 
 
 
-
+<div class="pc">
 			<nav class="gnavi">
 
 	<nav>
@@ -206,6 +187,32 @@ $(window).scroll(function(){
 					</li>
 				</ul>
 			</nav>
+</div>
+
+<div class="sp">
+<body class="drawer drawer--right">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+				      <li><a href="index.html">HOME</a></li>
+				      <li><a href="about.html">ABOUT</a></li>
+				      <li><a href="info.html">周辺情報</a></li>
+				      <li><a href="access.html">ACCESS</a></li>
+              <li><a href="form.html">お問い合わせ</a></li>
+				   </ul>
+    </nav>
+
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+</body>
+</div>
 
 			<div class="scroll">
 				<img src="images/scroll.png" alt="スクロール">

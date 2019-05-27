@@ -161,5 +161,7 @@ p.info2{
   opacity: 0.7;
 }
 
-
+/*ここから追加*/
+.sp { display: none !important; }
+.pc { display: block !important; }
 }

@@ -118,7 +118,7 @@ li a{
 }
 
 .image1 div img{
-	width:100%;
+	width:95%;
 	padding:0 0 0 15%;
 }
 
@@ -135,7 +135,7 @@ li a{
 }
 
 .image2 div img{
-	width:100%;
+	width:95%;
 	padding:0 0 0 15%;
 }
 
@@ -152,7 +152,7 @@ li a{
 }
 
 .image3 div img{
-	width:100%;
+	width:95%;
 	padding:0 0 0 15%;
 }
 
@@ -169,7 +169,7 @@ li a{
 }
 
 .image4 div img{
-	width:100%;
+	width:95%;
 	padding:0 0 0 15%;
 }
 
@@ -240,5 +240,61 @@ p.info2{
   opacity: 0.7;
 }
 
+/*ここから追加*/
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+.circle1{
+  position: relative;
+}
+.circle1 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 1.4vw;
+  top: 40%;
+  left: 32%;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+.circle2{
+  position: relative;
+}
+.circle2 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 1.2vw;
+  top: 37%;
+  right: -1%;
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+.circle3{
+  position: relative;
+}
+.circle3 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 1.2vw;
+  top: 37%;
+  left: 25%;
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+.circle4{
+  position: relative;
+}
+.circle4 p{
+  position: absolute;
+  color: #8b0000;
+  font-size: 1.4vw;
+  top: 39%;
+  right: 17%;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
 
 }

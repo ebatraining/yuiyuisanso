@@ -160,6 +160,29 @@ li a{
 	  text-decoration: none;
 	  opacity: 0.7;
 	}
-
-
+/*ここから追加*/
+.pc { display: none !important; }
+.sp { display: block !important; }
+	
+/*ハンバーガーメニュー*/
+.sp .drawer-hamburger-icon,
+.sp .drawer-hamburger-icon:after,
+.sp .drawer-hamburger-icon:before{
+  background-color:#8b0000;
+}
+li a{
+	display: block;
+	text-decoration: none;
+	color: #8b0000;
+	font-family:'HG正楷書体-PRO','HGP行書体',cursive;
+	font-size: 5.3vw;
+	font-weight:bold;
+	opacity: 0.9;
+	padding: 10px 1%;
+}
+.drawer-nav{
+	z-index: 4!important;
+	background-color: #fffaf0!important;
+	width: 12.25rem!important;
+}
 }
